@@ -14,7 +14,7 @@ tauto.
 Qed.
 
 (*If modus ponens[1] (the second half of the if and only if statement) is interpreted to be equal to this statement then it's true only when logical conjunction is true.*)
-(*This interpretation doesn't say anything really relevant about P and Q either, since logical conjunction is a very simple logical concept that doesn't comment on how something can be deduced from something else.*)
+(*This interpretation doesn't say anything really relevant about Q being deduced from P either, since logical conjunction is a very simple logical concept that doesn't comment on how something can be deduced from something else.*)
 Theorem modus_ponens_and: forall P Q: Prop, ((P /\ Q) <-> (P /\ (P -> Q))).
 tauto.
 Qed.
