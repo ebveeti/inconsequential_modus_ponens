@@ -7,22 +7,18 @@ Qed.
 (*No changes were made to the original code.*)
 (*https://stackoverflow.com/a/32813110*)
 
-(*If modus ponens[1] (the left half of the if and only if statement) is interpreted this way, then it's a tautology.*)
-(*In that sense it deduces and says nothing meaningful about how Q can be deduced from P since it's always true.*)
+(*Modus ponens[1] is a tautology.*)
 Theorem modus_ponens_tautology: forall P Q: Prop, ((P /\ (P -> Q)) -> Q) <-> ~~(P \/ ~ P).
 tauto.
 Qed.
+(*Discovery possibly already made earlier:*)
+(*https://math.stackexchange.com/q/3426524*)
 
-(*If modus ponens[1] (the second half of the if and only if statement) is interpreted to be equal to this statement then it's true only when logical conjunction is true.*)
-(*This interpretation doesn't say anything really relevant about Q being deduced from P either, since logical conjunction is a very simple logical concept that doesn't comment on how something can be deduced from something else.*)
+(*Modus ponens[1] is a conjunction when given a more lax metalogical interpretation. |- means turnstile.*)
+(*((P /\ (P -> Q)) |- Q)*)
 Theorem modus_ponens_and: forall P Q: Prop, ((P /\ Q) <-> (P /\ (P -> Q))).
 tauto.
 Qed.
 
-(*Maybe there is a more meaningful form of modus ponens in propositional logic than those that are covered here, but I personally haven't encountered it. I'm interested to hear if such form exists.*)
-
-(*[1] Edgington, Dorothy, 'Indicative Conditionals',
-The Stanford Encyclopedia of Philosophy (Fall 2020 Edition),
-Edward N. Zalta (ed.)
-URL = <https://plato.stanford.edu/archives/fall2020/entries/conditionals/>.*)
+(*[1]https://plato.stanford.edu/archives/fall2020/entries/conditionals/*)
 
