@@ -1,6 +1,3 @@
-# This CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to generate yours today!
-
 cff-version: 1.2.0
 title: Inconsequential modus ponens
 message: Please cite this software using these metadata.
@@ -9,3 +6,5 @@ authors:
   - given-names: Veeti
     family-names: Eronen
     email: eronenveeti174@gmail.com
+version: 1.0.6
+repository-code: "https://github.com/ebveeti/inconsequential_modus_ponens"
