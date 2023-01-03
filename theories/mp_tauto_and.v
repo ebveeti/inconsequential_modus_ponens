@@ -3,5 +3,3 @@ Theorem prop_modus_ponens_and: forall P Q: Prop, ((P /\ (P -> Q)) <-> (P /\ Q)).
 tauto.
 Qed.
 
-(*[1]https://plato.stanford.edu/archives/fall2020/entries/conditionals/*)
-
